@@ -8,5 +8,5 @@ setup(
     author='Julia Menchavez',
     author_email='jcmenchavez@gmail.com',
     license='MIT',
-    packages=['gitignorepy'])
-
+    packages=['gitignorepy'],
+    scripts=['bin/gitignorepy'])
