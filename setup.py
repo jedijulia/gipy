@@ -9,4 +9,6 @@ setup(
     author_email='jcmenchavez@gmail.com',
     license='MIT',
     packages=['gitignorepy'],
-    scripts=['bin/gitignorepy'])
+    scripts=['bin/gitignorepy'],
+    install_requires=['requests'],
+    setup_requires=['requests'])
