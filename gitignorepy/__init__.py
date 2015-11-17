@@ -10,4 +10,4 @@ def generate(*targets, **kwargs):
     response = requests.get(url)
 
     # this contains the generated gitignore contents
-    contents = response.text
+    return response.text
