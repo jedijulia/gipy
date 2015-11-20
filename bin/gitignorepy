@@ -6,6 +6,16 @@ import gitignorepy
 
 options, arguments = getopt.getopt(sys.argv[1:], 'w', ['write'])
 
+write = False
+for option in options:
+    if option[0] in ['-w', '--write']:
+        write = True
+
 contents = gitignorepy.generate(*arguments)
 
-print contents
+if write:
+    with open('.gitignore', 'w') as file:
+        file.write(contents)
+    print 'gitignore file generated: .gitignore'
+else:
+    print contents
