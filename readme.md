@@ -16,3 +16,7 @@ By default, this will just print out the generated contents on the terminal
 #### Options
 
 `-w`, `--write`: write the generated contents to a file named `.gitignore`
+
+#### License
+
+MIT License
