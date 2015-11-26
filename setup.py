@@ -1,9 +1,16 @@
+import os
 from setuptools import setup
+
+
+def read(filename):
+    return open(os.path.join(__file__, filename)).read()
+    
 
 setup(
     name='gitignorepy',
     version='0.1.0',
     description='cli to create gitignore files from gitignore.io',
+    long_description=read('readme.md'),
     keywords='cli gitignore git',
     url='https://github.com/jedijulia/gitignorepy',
     author='Julia Menchavez',
